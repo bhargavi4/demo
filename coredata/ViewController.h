@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AppDelegate.h"
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *first;
 
+@property (weak, nonatomic) IBOutlet UITextField *second;
 
+- (IBAction)buttoact:(UIButton *)sender;
 @end
 

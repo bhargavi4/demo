@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    NSManagedObjectContext *context;
+}
 
 @end
 
@@ -16,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    AppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
+    context=[appdelegate.persistentContainer viewContext];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,4 +30,15 @@
 }
 
 
+- (IBAction)buttoact:(UIButton *)sender {
+    NSManagedObject *obj = [NSEntityDescription insertNewObjectForEntityForName:@"Test" inManagedObjectContext:context];
+    [obj setValue:_first.text forKey:@"first"];
+    [obj setValue:_second.text forKey:@"second"];
+    NSError *error = nil;
+    if (![context save:&error]) {
+        NSLog(@"Saving Failed!, Error and its Desc %@ %@", error, [error localizedDescription]);
+    }  else{
+        NSLog(@"saved");
+    }
+}
 @end
