@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2592D91A1E36C38100F118C6 /* gittestingfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2592D9191E36C38100F118C6 /* gittestingfileViewController.m */; };
 		25DCDE501E31C188009232C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCDE4F1E31C188009232C0 /* main.m */; };
 		25DCDE531E31C188009232C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCDE521E31C188009232C0 /* AppDelegate.m */; };
 		25DCDE561E31C188009232C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCDE551E31C188009232C0 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2592D9181E36C38100F118C6 /* gittestingfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gittestingfileViewController.h; sourceTree = "<group>"; };
+		2592D9191E36C38100F118C6 /* gittestingfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gittestingfileViewController.m; sourceTree = "<group>"; };
 		25DCDE4B1E31C188009232C0 /* coredata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coredata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DCDE4F1E31C188009232C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25DCDE511E31C188009232C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 				25DCDE521E31C188009232C0 /* AppDelegate.m */,
 				25DCDE541E31C188009232C0 /* ViewController.h */,
 				25DCDE551E31C188009232C0 /* ViewController.m */,
+				2592D9181E36C38100F118C6 /* gittestingfileViewController.h */,
+				2592D9191E36C38100F118C6 /* gittestingfileViewController.m */,
 				25DCDE571E31C189009232C0 /* Main.storyboard */,
 				25DCDE5D1E31C189009232C0 /* Assets.xcassets */,
 				25DCDE5F1E31C189009232C0 /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25DCDE5C1E31C189009232C0 /* coredata.xcdatamodeld in Sources */,
+				2592D91A1E36C38100F118C6 /* gittestingfileViewController.m in Sources */,
 				25DCDE561E31C188009232C0 /* ViewController.m in Sources */,
 				25DCDE531E31C188009232C0 /* AppDelegate.m in Sources */,
 				25DCDE501E31C188009232C0 /* main.m in Sources */,
@@ -313,6 +319,7 @@
 				25DCDE671E31C189009232C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

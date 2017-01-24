@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"testing");
     AppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
     context=[appdelegate.persistentContainer viewContext];
     // Do any additional setup after loading the view, typically from a nib.
