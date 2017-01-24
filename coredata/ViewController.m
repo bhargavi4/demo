@@ -18,10 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"testing");
+    
     AppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
     context=[appdelegate.persistentContainer viewContext];
     // Do any additional setup after loading the view, typically from a nib.
+    [self fetchdatafromcoredata];
 }
 
 
@@ -41,5 +42,24 @@
     }  else{
         NSLog(@"saved");
     }
+    
+    [self fetchdatafromcoredata];
+}
+-(void)fetchdatafromcoredata{
+    NSFetchRequest *fetchreq = [[NSFetchRequest alloc]initWithEntityName:@"Test"];
+    NSError *error = nil;
+    NSArray *arrdata = [context executeFetchRequest:fetchreq error:&error];
+    NSLog(@"%@",arrdata);
+
+    if (error !=nil) {
+        NSLog(@"error");
+    }else{
+        NSLog(@"fetched");
+    }
+    
+    for (NSManagedObject *obj in arrdata) {
+        NSLog(@"%@",obj);
+    }
+    
 }
 @end
